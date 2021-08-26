@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+/* above is font selected for page ,
+below is * that symbolizes all elements will be effected  */
+:root{
+  --primary-color:tan;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* the font and generic settings for body on the first page */
+body {
+   font-family: 'Roleway' , sans-serif;
+   color: #3333;
+   line-height: 1.6;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2{
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p{
+  /* seperates to tell paragraphs apart */
+   margin : 10px 0;  
+}
+
+/* make images take up 100% of space and wont let it flood outside of its box */
+img {
+   width: 15%;
+   border-radius: 0px;
+}
+
+.navbar{
+  background-color:var(--primary-color);
+  color: aliceblue;
+  height: 70px;
+}
+
+/* makes the page links horizontal  */
+.navbar ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* seperaters the page links */
+.navbar a:hover{
+  color: antiquewhite;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+/* shows a white line underneath page link when hovered over */
+/* NEEDDS TO BE WORKED ON */
+/* .navbar:hover{
+  border-bottom: 2px, white ;
+}
+.navbar:hover:after{
+border-bottom: 2px white;
+} */
+
+/* Showcase */
+.showcase{
+  height: 400;
+  background: var(--primary-color);
+  color: white;
+  position: relative;
+}
+
+.showcase h1{
+  font-size: 30px;
+}
+
+.showcase p{
+  margin: 20px 0;
+}
+
+.showcase .grid{
+  grid-template-columns:55% 45%;
+}
+
+
+/* Utilities that will be used throught out the whole website */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  justify-content:center;
+  align-items:center;
+  height:100%;
+}
+
+/* esa test form */
+.esarequest{
+  max-width: 300px;
+  background-color:tan;
+  justify-content: center;
+  
+}
+
+/* Greylee's Pictures */
+.greylee {
+  display: flex;
+  justify-content: space-between;
+  
+}
+/* .one:hover{
+  background: rgb(74, 128, 74);
+  transition: all 3s ease;
+} */
+/* youtube video responsiveness */
+.youtube{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+    
+  }
+  .youtube iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .esapic{
+    width: 1850px;
+    
+  }
+  .container2{
+    color: tan;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+  }
+  .aboutg{
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+  }
+.contactpage{
+  background-color: tan;
+  max-height: 100%;
+}
+
+/* reactive page from large screen to small screen */
